@@ -10,7 +10,7 @@ mensagem.innerHTML="✅ Correto! Mas as mulheres cientistas tiveram papel fundam
 
 else{
 
-mensagem.innerHTML="❌ Não exatamente. Pesquise sobre o Efeito Matilda e descubra quem também contribuiu para essa descoberta.";
+mensagem.innerHTML="❌ Incorreto! Pesquise sobre o Efeito Matilda e descubra quem também contribuiu para essa descoberta.";
 
 }
 
