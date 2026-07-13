@@ -87,23 +87,18 @@ return [...lista].sort(()=>Math.random()-0.5);
 
 }
 
-function iniciarQuiz(){
+function iniciarQuiz() {
 
-const qtd = Number(document.getElementById("quantidade").value);
+    const qtd = Number(document.getElementById("quantidade").value);
 
-listaPerguntas = embaralhar(perguntas);
+    listaPerguntas = embaralhar(perguntas).slice(0, qtd);
 
-if(qtd>0){
+    indice = 0;
+    pontos = 0;
 
-listaPerguntas = listaPerguntas.slice(0,qtd);
+    document.getElementById("resultado").innerHTML = "";
 
-}
-
-indice=0;
-pontos=0;
-
-mostrarPergunta();
-
+    mostrarPergunta();
 }
 
 function mostrarPergunta(){
