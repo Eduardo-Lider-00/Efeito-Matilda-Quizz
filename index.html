@@ -1,86 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desmistificando o Efeito Matilda</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desmistificando o Efeito Matilda</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Desmistificando o Efeito Matilda</h1>
-    <p>Fecon 2026, Mulheres na Ciência</p>
+<h1>Desmistificando o Efeito Matilda</h1>
+<p>FECON 2026 • Mulheres na Ciência</p>
 </header>
 
 <section class="texto">
-    <h2>O que é o Efeito Matilda?</h2>
 
-    <p>
-        O Efeito Matilda é um fenômeno em que mulheres cientistas têm suas
-        descobertas ignoradas ou atribuídas a colegas homens. O termo foi
-        criado pela historiadora Margaret Rossiter em homenagem à ativista
-        Matilda Joslyn Gage.
-    </p>
+<h2>O que é o Efeito Matilda?</h2>
 
-    <p>
-        Ao longo da história, diversas pesquisadoras fizeram contribuições
-        fundamentais para a ciência, mas não receberam o mesmo reconhecimento
-        que seus colegas. Conhecer essas histórias ajuda a construir uma ciência
-        mais justa e incentiva novas gerações de cientistas.
-    </p>
+<p>
+O Efeito Matilda descreve a situação em que mulheres cientistas têm suas descobertas
+minimizadas ou atribuídas a outros pesquisadores.
+</p>
+
 </section>
 
 <section class="quiz">
 
-<h2>Quiz: Quem realmente descobriu?</h2>
+<h2>Quiz</h2>
 
-<div class="pergunta">
-<h3>1. Quem recebeu o maior reconhecimento pela estrutura do DNA?</h3>
+<label>Quantas questões deseja responder?</label>
 
-<button onclick="resposta('errado')">Rosalind Franklin</button>
-<button onclick="resposta('certo')">Watson e Crick</button>
-<button onclick="resposta('errado')">Linus Pauling</button>
+<select id="quantidade">
+<option value="3">3 questões</option>
+<option value="5">5 questões</option>
+<option value="0">Todas</option>
+</select>
 
-</div>
+<button onclick="iniciarQuiz()">
+Começar
+</button>
 
-<div class="pergunta">
-<h3>2. Quem ganhou o Nobel pela fissão nuclear?</h3>
+<div id="quiz"></div>
 
-<button onclick="resposta('errado')">Lise Meitner</button>
-<button onclick="resposta('certo')">Otto Hahn</button>
-<button onclick="resposta('errado')">Enrico Fermi</button>
-
-</div>
-
-<div class="pergunta">
-<h3>3. Quem recebeu o Nobel relacionado aos pulsares?</h3>
-
-<button onclick="resposta('errado')">Jocelyn Bell Burnell</button>
-<button onclick="resposta('certo')">Antony Hewish</button>
-<button onclick="resposta('errado')">Carl Sagan</button>
-
-</div>
-
-<p id="mensagem"></p>
-
-</section>
-
-<section class="debate">
-
-<h2>Debate</h2>
-
-<ul>
-<li>Por que tantas mulheres foram apagadas da história da ciência?</li>
-<li>O reconhecimento científico é mais justo atualmente?</li>
-<li>Como incentivar mais meninas a seguir carreira científica?</li>
-<li>O que universidades e instituições podem fazer para evitar esse problema?</li>
-</ul>
+<div id="resultado"></div>
 
 </section>
 
 <footer>
-<p>Projeto Educacional - História da Ciência</p>
+
+Projeto Educacional • História da Ciência
+
 </footer>
 
 <script src="script.js"></script>
